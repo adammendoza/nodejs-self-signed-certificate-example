@@ -24,9 +24,9 @@
   "author": "AJ ONeal <awesome@coolaj86.com> (http://coolaj86.com)",
   "license": "Apache-2",
   "bugs": {
-    "url": "https://github.com/coolaj86/nodejs-self-signed-certificate-example/issues"
+    "url": "https://github.com/adammendoza/nodejs-self-signed-certificate-example/issues"
   },
-  "homepage": "https://github.com/coolaj86/nodejs-self-signed-certificate-example",
+  "homepage": "https://github.com/adammendoza/nodejs-self-signed-certificate-example",
   "dependencies": {
     "ssl-root-cas": "^1.1.4"
   }

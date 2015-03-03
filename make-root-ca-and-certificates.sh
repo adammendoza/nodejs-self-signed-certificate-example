@@ -18,7 +18,7 @@ openssl req \
   -key certs/ca/my-root-ca.key.pem \
   -days 1024 \
   -out certs/ca/my-root-ca.crt.pem \
-  -subj "/C=US/ST=Utah/L=Provo/O=ACME Signing Authority Inc/CN=example.com"
+  -subj "/C=US/ST=California/L=San Francisco/O=HashCode10 Inc/CN=example.com"
 
 # Create a Device Certificate for each domain,
 # such as example.com, *.example.com, awesome.example.com
@@ -31,7 +31,7 @@ openssl genrsa \
 openssl req -new \
   -key certs/server/my-server.key.pem \
   -out certs/tmp/my-server.csr.pem \
-  -subj "/C=US/ST=Utah/L=Provo/O=ACME Tech Inc/CN=${FQDN}"
+  -subj "/C=US/ST=California/L=San Francisco/O=HashCode10 Inc/CN=${FQDN}"
 
 # Sign the request from Device with your Root CA
 # -CAserial certs/ca/my-root-ca.srl

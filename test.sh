@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash make-root-ca-and-certificates.sh 'local.ldsconnect.org'
+bash make-root-ca-and-certificates.sh 'local.example.com'
 echo ""
 
 echo ""
@@ -10,13 +10,13 @@ sleep 1
 
 echo ""
 echo ""
-node ./request-without-warnings.js 8043 'local.ldsconnect.org'
+node ./request-without-warnings.js 8043 'local.example.com'
 echo -n " - without warnings, love node.js' https"
 echo ""
 sleep 1
 
 echo ""
-curl https://local.ldsconnect.org:8043 \
+curl https://local.example.com:8043 \
   --cacert certs/client/my-root-ca.crt.pem
 echo -n " - without warnings, love cURL"
 echo ""
